@@ -1,0 +1,71 @@
+body {
+	background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhbGx5JTIwY29vbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+	background-color: gray;
+	opacity: 80%;
+	font-family: 'Courier New';
+	width:200px
+
+}
+
+#firstP {
+	background-color: inherit;
+	background-image: linear-gradient(to right, red, blue);
+	font-family: "Helvetica";
+
+}
+
+#secondP {
+	background-color: inherit;
+	background-image: linear-gradient(to left, whitesmoke, #FF00FF);
+	font-family: "Century Gothic";
+}
+
+#thirdP {
+	background-color: inherit;
+	background-image: repeating-linear-gradient(green, #00FFFF);
+	font-family: "Gill Sans"
+}
+
+#fourthP {
+	background-image: url("https://cellularnews.com/wp-content/uploads/2020/03/Cool-2-325x485.jpg");
+	background-position: center;
+	background-size: 50%;
+	color:white;
+}
+
+.hd {
+	background-color: red;
+	opacity: 70%;
+	font-family: "Andale Mono";
+}
+
+#tristan {
+	color: black;
+	text-shadow: 10px 5px whitesmoke;
+}
+
+
+/* DIV: */
+.trump {
+	width: 100px;
+	height: 100px;
+	background-color:red;
+	animation-name: example;
+	animation: example 2s infinite;
+	opacity: 60%;
+
+
+}
+/* DEFINITION OF ANIMATION */
+@keyframes example {
+	from{background-color: red;}
+	to{background-color: yellow;}
+	100% {transform:rotate(360deg);}
+
+}
