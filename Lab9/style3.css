@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffa6b2;
+  padding: 20px;
+  text-align: center;
+  color: inherit;
+  font-style: italic;
+  text-decoration: underline;
+  /* Property: value */
+}
+
+/* Style for the top navigation bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #da9ff9;
+}
+
+/*
+"topnav" is given to a div
+"a" means all anchors in topnav will have
+the following attributes
+*/
+.topnav a {
+  float: left;
+  display: block; /* looks like a box */
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/*
+for the "topnav" div, when you hover the
+mouse over it, it will take the following
+attributes:
+*/
+body {
+  background-color: #BEDCFA
+}
+.topnav :hover {
+  background-color: #ff8e71;
+  color:black;
+}
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 40%;
+  padding 15px;
+  font-family: "Marker Felt";
+  border-width: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+ .row h2 {
+  color: black;
+  background-color: #b088f9;
+  float: left;
+
+}
+.row p {
+  background-color: #98acf8;
+  float: left;
+  border-color: black;
+
+}
+=
+@media screen and (max-width:600px) {
+  .column {
+    width 100%;
+  }
+}
