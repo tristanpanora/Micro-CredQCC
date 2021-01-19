@@ -4,9 +4,12 @@
 
 /* Style the header */
 .header {
-  background-color: orange;
+  background-color: #ffa6b2;
   padding: 20px;
   text-align: center;
+  color: inherit;
+  font-style: italic;
+  text-decoration: underline;
   /* Property: value */
 }
 
@@ -14,7 +17,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color: red;
+  background-color: #da9ff9;
 }
 
 /*
@@ -25,10 +28,11 @@ the following attributes
 .topnav a {
   float: left;
   display: block; /* looks like a box */
-  color: #f2f2f2;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px 18px;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 /*
@@ -36,8 +40,11 @@ for the "topnav" div, when you hover the
 mouse over it, it will take the following
 attributes:
 */
+body {
+  background-color: #BEDCFA
+}
 .topnav :hover {
-  background-color: #ddd;
+  background-color: #ff8e71;
   color:black;
 }
 
@@ -46,11 +53,8 @@ attributes:
   float: left;
   width: 40%;
   padding 15px;
-  /*font-family: "Chalkduster";*/
-
-  font-family: 'Tangerine', serif;
-  font-size: 48px;
-        
+  font-family: "Marker Felt";
+  border-width: 10px;
 
 }
 
@@ -63,15 +67,17 @@ attributes:
 
  .row h2 {
   color: black;
-  background-color: red;
+  background-color: #b088f9;
   float: left;
 
 }
 .row p {
-  background-color: #ffaaaa;
+  background-color: #98acf8;
   float: left;
+  border-color: black;
 
 }
+=
 @media screen and (max-width:600px) {
   .column {
     width 100%;
