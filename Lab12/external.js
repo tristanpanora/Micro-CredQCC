@@ -1,28 +1,16 @@
-function info()
+function myFunction()
 {
-	var echo = document.alertform.yourname.value;
+	var food = document.foodForm.favFood.value;
+	var age = document.foodForm.currentAge.value;
+	var die = document.foodForm.deathAge.value;
 
-	alert(echo);
-}
+	//Assuming you eat one of your favFood per day:
 
-function fullInfo()
-{
-	var name = document.addressform.yourname.value;
-	var phoneNum = document.addressform.phone.value;
-	var email = document.addressform.email.value;
+	var yearsLeft = die-age;
 
-	alert(name + " " + phoneNum + " " + email);
-}
+	var daysLeft = yearsLeft*365;
 
-function predictFuture()
-{
-	var name = document.futureform.yourname.value;
-	var job = document.futureform.yourjob.value;
-	var location = document.futureform.location.value;
-	var partner = document.futureform.partner.value;
-	var kids = document.futureform.kids.value;
+	var answer = "You will need " + daysLeft + " units of " + food + " to last you until the ripe old age of " + die + ".";
 
-
-	alert('Name: ' + name + "\n" + 'You will be a' + job + ' in ' + location + ', and married to ' 
-		+ partner + ' ' + ' with ' + kids + ' kids.')
+	document.getElementById('result').innerHTML = answer + " (Assuming you eat one per day)";
 }

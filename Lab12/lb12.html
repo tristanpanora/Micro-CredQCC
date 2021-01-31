@@ -4,158 +4,33 @@
 	<head>
 		<title> Lab 12 </title>
 
-
-		<!-- <link rel="stylesheet" href="style2.css" type="text/css"> -->
 			<link rel="stylesheet"
 	          href="https://fonts.googleapis.com/css?family=Tangerine">
 
-			<!-- <link rel="stylesheet" href="style2.css" type="text/css"> -->
-			<!-- <link rel="stylesheet" href="style3.css" type="text/css"> -->
-			<!-- <link rel="stylesheet" href="style4.css" type="text/css"> -->
 			<link rel="stylesheet" href="style5.css" type="text/css">
 
 			<script src = "./external.js"> </script>
 
-
-
 	</head>
 
+
 	<body>
-		<div class="header">
-			<h1> BANNER </h1>
 
-		<p> Resize the browser window </p>
-	</div>
+		<h1> Lifetime Supply Calculator </h1>
 
 
-		<div class="topnav">
+		<form type="text" name="foodForm">
 
-			<a href="https://www.youtube.com/"> Link </a>
-			<a href="https://www.youtube.com/"> Link </a>
-			<a href="https://www.youtube.com/"> Link </a>
+			Your favorite food: &nbsp; <input type="text" name="favFood"> <br>
+			Your current age: &nbsp; <input type="text" name="currentAge"> <br>
+			Enter the age you'll die (just guess, life expectancy is 75 so around there): &nbsp; <input type="text" name="deathAge"> <br><br>
 
-	<br><br>
-
-	<div style="text-align:center">
- 	
-
-	 
-
-	 </div>
-
-	 
-
-
-		<!-- DEMO TAB -->
-		<div style="text-align:right">
-
-			<p id="demo" style="color:white;"><b>Don't click the button!</b></p>
-			<button type="button" onclick="myfunction()"> Don't do it! </button>
-
-		</div>
-		<script>
-
-				//Right Side
-				function myfunction()
-				{
-					document.getElementById("demo").innerHTML= "You're a true rebel!";
-				}
-
-				info();
-
-		</script>
-
-
-		</div>
-
-
-
+			<input type="button" value="Go" onclick="myFunction()">
+		</form>
 		<br>
 
-		<div class="column">
-
-			<div class="row">
-				<h2> Column </h2> 
-
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			</div>
-
-		</div>
-
-		<div class="column">
-
-			<div class="row">
-				<h2> Column </h2>
-				<br><br><br><br><br>
-
-
-				<!-- var future = 'You will be a ' + jobTitle + ' in ' +geoLocation + ', and married to ' + partner + ' ' + ' with ' +numKids + ' kids.'; -->
-
-				<form name="addressform" style="background-color: orange; color:black;">
-				Name: <input name="yourname"><br /><br>
-				Phone: <input name="phone"><br /><br>
-				Email: <input name="email"><br />
-				<input type="button" value="Go" onClick="fullInfo()">
-				</form>
-
-<br><br>
-				<form name="alertform">
-					Enter your name:
-					<input type="text" name="yourname">
-					<input type="button" value="Go" onClick="info()">
-				</form>
-
-				<br><br>
-
-
-
-				<form name="futureform" style="background-color: orange; color:black;">
-					Name: <input name="yourname"><br /><br>
-					Job: <input name="yourjob"><br /><br>
-					Location: <input name="location"><br /><br>
-					Partner: <input name="partner"><br /><br>
-					# of kids: <input name="kids"><br />
-					<input type="button" value="Go" onClick="predictFuture()">
-				</form>
-				<br>
-				<script>
-					x = prompt ("What's your favorite number?", " ");
-					document.write("You said: <br>",+x)
-
-				</script>
-
-
-
-
-
-
-				
-
-
-				
-			</div>
-
-		</div>
-
-		<div class="column">
-
-			<div class="row">
-				<h2> Column </h2>
-
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			</div>
-
-		</div>
-
-
+		<p id="result"> The result will appear here </p>
 
 	</body>
-
-
-
-
-
-
-
 
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Lab 13 </title>
+
+			<link rel="stylesheet"
+	          href="https://fonts.googleapis.com/css?family=Tangerine">
+
+			<link rel="stylesheet" href="style5.css" type="text/css">
+
+			<script src = "./external.js"> </script>
+			<script src="./jQuery.js"> </script>
+
+	</head>
+
+
+	<body>
+		<center>
+
+			<form name="list">
+		<table>
+			<th> Item name </th>
+			<th> Item Price </th>
+			<th> Add to cart </th>
+
+			<tr>
+				<td> Spaghetti </td> 
+				<td> $2.00 </td> 
+				<td> <input type="checkbox" name="item" id="item1" value="2"> </td>
+
+			</tr>
+
+			<tr>
+				<td> Steak </td>
+				<td> $20.00 </td>
+				<td> <input type="checkbox" name="item" id="item2" value="20"> </td>
+
+			</tr>
+			<tr>
+				<td> Apple </td>
+				<td> $1.00 </td>
+				<td> <input type="checkbox" name="item" id="item3" value="1"> </td>
+
+			</tr>
+
+			<tr>
+				<td> Cereal </td>
+				<td> $3.00 </td>
+				<td> <input type="checkbox" name="item" id="item4" value="3"> </td>
+
+			</tr>
+
+			<tr>
+				<td> Salt and Vinegar Chips </td>
+				<td> $5.00 </td>
+				<td> <input type="checkbox" name="item" id="item5" value="5"> </td>
+
+			</tr>
+
+		
+		</table>
+		<br>
+
+		<input type="button" value="Check out" onclick="cashRegister()">
+	</form>
+
+	<p> Selected items will appear here: </p> <br>
+
+	<p id="here">   </p>
+
+
+
+
+
+		</center>
+	</body>
+
+</html>
